@@ -15,7 +15,7 @@ public class JdbcIntro {
 
             PGSimpleDataSource ds = new PGSimpleDataSource();
             ds.setDatabaseName("culinarydb");
-            Connection connection = ds.getConnection("YOUR_USERNAME", "YOUR_PASSWORD");
+            Connection connection = ds.getConnection("postgres", "!Finnegan042020!");
 
             if (connection.isValid(500)) {
                 System.out.println("Got a connection using DataSource!");
